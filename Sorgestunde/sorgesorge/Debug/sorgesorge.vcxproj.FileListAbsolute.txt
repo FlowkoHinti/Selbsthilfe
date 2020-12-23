@@ -1,0 +1,2 @@
+C:\Users\minem\source\repos\SelbsthilfeGit\Selbsthilfe\Sorgestunde\sorgesorge\Debug\sorgesorge.exe
+C:\Users\minem\source\repos\SelbsthilfeGit\Selbsthilfe\Sorgestunde\sorgesorge\Debug\sorgesorge.pdb
