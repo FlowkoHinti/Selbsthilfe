@@ -1,0 +1,2 @@
+C:\Users\minem\source\repos\SelbsthilfeGit\Selbsthilfe\static\static\Debug\static.exe
+C:\Users\minem\source\repos\SelbsthilfeGit\Selbsthilfe\static\static\Debug\static.pdb
