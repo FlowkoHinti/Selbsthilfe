@@ -35,7 +35,7 @@ int main()
 		teacher t1("tempo, theox", 20010605, gender::diverse, 8976, "ttempo@fh.co.at");
 		// einf�gen eines studenten s2 mit den eigenen daten
 		//insert your code here!
-		student s2("hinti, flo", 19990119, gender::male, 1901, "yeeterberger.bangerang@doodle.comerino");
+		student s2("hinti, flo", 19990119, gender::male, 3233213212, "yeeterberger.bangerang@doodle.comerino");
 		// -------------------------------------------------------------------
 		// Testen der Methode getExtSVNr
 		// INSERT YOUR CODE HERE!
