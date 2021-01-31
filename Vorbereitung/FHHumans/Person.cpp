@@ -1,10 +1,10 @@
 #include "Person.h"
 #include "PrintExt.h"
 
-std::ostream& person::ausgabe(std::ostream& ausgabestream, person& pers)
+std::ostream& person::ausgabe(std::ostream& ausgabestream)
 {
 	std::string gender = "";
-	switch (pers.Geschlecht)
+	switch (Geschlecht)
 	{
 	case gender::male:
 		gender = "male";
@@ -17,8 +17,8 @@ std::ostream& person::ausgabe(std::ostream& ausgabestream, person& pers)
 		gender = "diverse";
 		break;
 	}
-	ausgabestream << "person" << " = { " + PrintExt::to_PrintItemStr(std::string{ "name" }, pers.Name) + ", "
-		+ PrintExt::to_PrintItemStr(std::string{ "birthdate" }, pers.GebDat) + ", " +
+	ausgabestream << "person" << " = { " + PrintExt::to_PrintItemStr(std::string{ "name" }, Name) + ", "
+		+ PrintExt::to_PrintItemStr(std::string{ "birthdate" }, GebDat) + ", " +
 		PrintExt::to_PrintItemStr(std::string{ "gender" }, gender) + " } ";
 	return ausgabestream;
 }

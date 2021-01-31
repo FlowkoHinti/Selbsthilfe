@@ -17,7 +17,7 @@ void check_email_validation(const std::string& s)
 
 std::ostream& operator<<(std::ostream& ausgabestream, person& pers)
 {
-	return pers.ausgabe(ausgabestream, pers);
+	return pers.ausgabe(ausgabestream);
 }
 
 int main()

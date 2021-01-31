@@ -2,12 +2,11 @@
 #include "PrintExt.h"
 
 
-std::ostream& student::ausgabe(std::ostream& ausgabestream, person& pers)
+std::ostream& student::ausgabe(std::ostream& ausgabestream)
 {
 	ausgabestream << "student" << " = { ";
-	pers.person::ausgabe(ausgabestream, pers);
-	student* stud = dynamic_cast<student*>(&pers);
-	ausgabestream << ", " << PrintExt::to_PrintItemStr(std::string{ "Matnr" }, stud->MatNr) << ", "
-		<< PrintExt::to_PrintItemStr(std::string{ "email" }, stud->email) << " } ";
+	person::ausgabe(ausgabestream);
+	ausgabestream << ", " << PrintExt::to_PrintItemStr(std::string{ "Matnr" }, MatNr) << ", "
+		<< PrintExt::to_PrintItemStr(std::string{ "email" }, email) << " } ";
 	return ausgabestream;
 }

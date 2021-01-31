@@ -19,6 +19,6 @@ public:
 
     ~student() override
     {}
-    std::ostream& ausgabe(std::ostream& ausgabestream, person& stud) override;
+    std::ostream& ausgabe(std::ostream& ausgabestream) override;
 };
 

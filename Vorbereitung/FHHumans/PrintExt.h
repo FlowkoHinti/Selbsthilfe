@@ -3,7 +3,7 @@
 namespace PrintExt
 {
 	template<typename typ>
-	static std::string to_PrintItemStr(std::string p1, typ p2)
+	inline std::string to_PrintItemStr(std::string p1, typ p2)
 	{
 		if (std::is_arithmetic_v<typ>)
 		{
@@ -12,7 +12,7 @@ namespace PrintExt
 		else return "";
 	}
 	template<>
-	static std::string to_PrintItemStr(std::string p1, std::string p2)
+	inline std::string to_PrintItemStr(std::string p1, std::string p2)
 	{
 		return "\"" + p1 + "\"" + "=\"" + p2 + "\"";
 	}

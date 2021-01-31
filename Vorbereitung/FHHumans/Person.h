@@ -26,7 +26,7 @@ public:
 	std::string getName() const { return Name; }
 	void setName(std::string name) { Name = name; }
 
-	virtual std::ostream& ausgabe(std::ostream& ausgabestream, person& pers);
+	virtual std::ostream& ausgabe(std::ostream& ausgabestream);
 	friend std::ostream& operator<<(std::ostream& ausgabestream, person& pers);
 };
 

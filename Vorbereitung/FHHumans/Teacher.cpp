@@ -11,13 +11,12 @@ std::string teacher::getExtSVNr() const
     return svnr + "-" + gebdate.substr(6,2) + gebdate.substr(4, 2) + gebdate.substr(2, 2);
 }
 
-std::ostream& teacher::ausgabe(std::ostream& ausgabestream, person& pers)
+std::ostream& teacher::ausgabe(std::ostream& ausgabestream)
 {
 	ausgabestream << "teacher" << " = { ";
-	pers.person::ausgabe(ausgabestream, pers);
-	teacher* teach = dynamic_cast<teacher*>(&pers);
-	ausgabestream << ", " << PrintExt::to_PrintItemStr(std::string{ "SVNr" }, teach->SVNr) << ", "
-		<< PrintExt::to_PrintItemStr(std::string{ "email" }, teach->email) << " } ";
+	person::ausgabe(ausgabestream);
+	ausgabestream << ", " << PrintExt::to_PrintItemStr(std::string{ "SVNr" }, SVNr) << ", "
+		<< PrintExt::to_PrintItemStr(std::string{ "email" }, email) << " } ";
 	return ausgabestream;
 
 }

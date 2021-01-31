@@ -1,0 +1,4 @@
+﻿  Testing.cpp
+C:\Users\minem\source\repos\SelbsthilfeGit\Selbsthilfe\Vorbereitung\Testing\Testing.cpp(29,15): warning C4244: "Argument": Konvertierung von "float" in "int", möglicher Datenverlust
+C:\Users\minem\source\repos\SelbsthilfeGit\Selbsthilfe\Vorbereitung\Testing\Testing.cpp(46): warning C4172: Adresse einer lokalen Variablen oder eines temporären Werts ": t" wird zurückgegeben
+  Testing.vcxproj -> C:\Users\minem\source\repos\SelbsthilfeGit\Selbsthilfe\Vorbereitung\Testing\Debug\Testing.exe

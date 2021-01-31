@@ -25,7 +25,7 @@ public:
 
     std::string getExtSVNr() const;
 
-    std::ostream& ausgabe(std::ostream& ausgabestream, person& teach) override;
+    std::ostream& ausgabe(std::ostream& ausgabestream) override;
 
 };
 
